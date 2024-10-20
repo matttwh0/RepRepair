@@ -7,9 +7,9 @@ import os
 async def gemini_analysis(set_data):
     load_dotenv()
     # secret_value = os.getenv("GOOGLE_API_KEY")
-    GOOGLE_API_KEY='AIzaSyAn4xZ0QfCxk8oClXtse0UKStz0YCKefLU'
+    GOOGLE_API_KEY=''
     genai.configure(api_key=GOOGLE_API_KEY)
-    set_data = {"angle of elbow": 180, "poop": "say butt"}
+    # set_data = {"angle of elbow": 180, "poop": "say butt"}
     model = genai.GenerativeModel('gemini-1.5-pro')
 
     response = model.generate_content(["""
