@@ -21,7 +21,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #293135;
+  background: linear-gradient(135deg,#293135,#364044);
   overflow: hidden;
 }
 
