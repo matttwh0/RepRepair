@@ -1,25 +1,16 @@
+/* CSS (globals.css) */
+
 .homepage-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   width: 100vw;
   margin: 0;
   overflow: hidden;
   background: #293135;
   padding: 0;
-}
-
-.lifting-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  opacity: 0.7;
-  margin: 1rem;
 }
 
 .card {
@@ -55,15 +46,32 @@
   font-size: 1.5rem;
   padding: 1rem 2rem;
   border: none;
-  background-color: #293135;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293135;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border: 1px solid white;
 }
+
 .upload-button:hover {
+  background-color: #0056b3;
+}
+
+.response-button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.response-button:hover {
   background-color: #0056b3;
 }
 
@@ -72,7 +80,6 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #ffefd5;
 }
 
 .back-button {
@@ -89,11 +96,15 @@
 .back-button:hover {
   background-color: #0056b3;
 }
+
+/* Additional CSS for Navbar positioning */
+
 .navbar {
-  width: 100%;
+  width: 100vw;
   padding: 1rem;
   background-color: #293135;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
   border: 1px solid white;
 }
 
@@ -102,6 +113,14 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+}
+
+.navbar-container h2:first-child {
+  margin-right: auto;
+}
+
+.navbar-container h2:last-child {
+  margin-left: auto;
 }
 
 .navbar h2 a {
